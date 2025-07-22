@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSmart Water Bottle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">EcoSmart</h1>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>EcoSmart Water Bottle</h2>
+      <p>The smart way to stay hydrated</p>
+      <img src="Img1.png" alt="EcoSmart Water Bottle" class="bottle-img">
+      <p class="price">Price: <span id="price">R750.00</span></p>
+      <button id="buy-btn" class="btn">Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Eco-Friendly</h3>
+        <p>Made from recycled materials</p>
+      </div>
+      <div class="feature-item">
+        <h3>Keeps Cold</h3>
+        <p>Stays cold for 24 hours</p>
+      </div>
+      <div class="feature-item">
+        <h3>Leak Proof</h3>
+        <p>No spills in your bag</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <h2>Choose Your Color</h2>
+    <div class="color-options">
+      <div class="color-option">
+        <input type="radio" name="color" id="blue" value="750" checked>
+        <label for="blue">Blue (R750)</label>
+      </div>
+      <div class="color-option">
+        <input type="radio" name="color" id="green" value="800">
+        <label for="green">Green (R800)</label>
+      </div>
+      <div class="color-option">
+        <input type="radio" name="color" id="black" value="850">
+        <label for="black">Black (R850)</label>
+      </div>
+    </div>
+
+    <h3>Add Extras</h3>
+    <div class="extras">
+      <div class="extra-option">
+        <input type="checkbox" id="engraving" value="150">
+        <label for="engraving">Add Engraving (+R150)</label>
+      </div>
+      <div class="extra-option">
+        <input type="checkbox" id="giftbox" value="100">
+        <label for="giftbox">Gift Box (+R100)</label>
+      </div>
+    </div>
+
+    <div class="total-price">
+      <h3>Total: <span id="total">R750.00</span></h3>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I agree to the terms</label>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Buy Now Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Customize Your Bottle</h2>
+      <div class="modal-color">
+        <h3>Choose Color:</h3>
+        <select id="modal-color">
+          <option value="750">Blue (R750)</option>
+          <option value="800">Green (R800)</option>
+          <option value="850">Black (R850)</option>
+        </select>
+      </div>
+      <div class="modal-extras">
+        <h3>Add Extras:</h3>
+        <input type="checkbox" id="modal-engraving" value="150">
+        <label for="modal-engraving">Engraving (+R150)</label>
+        <br>
+        <input type="checkbox" id="modal-giftbox" value="100">
+        <label for="modal-giftbox">Gift Box (+R100)</label>
+      </div>
+      <div class="modal-total">
+        <h3>Total: <span id="modal-total">R750.00</span></h3>
+      </div>
+      <button class="btn">Complete Purchase</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
